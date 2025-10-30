@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title></title>
+ <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+ <!-- HEADER -->
+ <!-- HEADER -->
+<header class="header">
+<!-- LOGO -->
+<div class="header__logo">
+<img src="" alt="">
+<span></span>
+</div>
+
+<!-- BARRE DE RECHERCHE -->
+<form class="header__search" role="search" aria-label="Recherche produits" onsubmit="return false;">
+<div class="search">
+<span class="search__icon" aria-hidden="true">🔎</span>
+<input id="searchInput" name="q" type="search"
+placeholder="Rechercher produits, catégories, références…"
+aria-autocomplete="list" aria-controls="searchList" autocomplete="off" />
+<button type="submit">Rechercher</button>
+<ul id="searchList" class="search__suggestions" role="listbox" hidden></ul>
+</div>
+</form>
+
+<!-- ACTIONS UTILISATEUR -->
+<div class="header__actions">
+<a href="#" class="link">Se connecter</a>
+<a href="#" class="link">Mes commandes</a>
+<a href="#" class="btn-cart">Panier (0)</a>
+</div>
+</header>
+
+ <!-- BARRE CATÉGORIES (Nav) -->
+ <nav class="navcats" aria-label="Navigation catégories">
+ <div class="navcats__inner">
+ <!-- Bouton mega menu -->
+ <button class="navcats__toggle" id="btnCats" aria-expanded="false" aria-controls="megaCats">☰ Catégories</button>
+
+ <!-- Liens rapides (pills) -->
+ <ul class="navcats__quick">
+ <li><a href="#">Textile</a></li>
+ <li><a href="#">Chaussures</a></li>
+ <li><a href="#">Sacs</a></li>
+ <li><a href="#">Maison</a></li>
+ <li><a href="#">Électronique</a></li>
+ <li><a href="#">Beauté</a></li>
+ </ul>
+ </div>
+
+ <!-- Mega menu catégories -->
+ <div class="mega" id="megaCats" hidden>
+ <div class="mega__col">
+ <h4>Textile</h4>
+ <a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a>
+ </div>
+ <div class="mega__col">
+ <h4></h4>
+ <a href="#">/a><a href="#"></a><a href="#"></a><a href="#"></a>
+ </div>
+ <div class="mega__col">
+ <h4></h4>
+ <a href="#"></a><a href="#"</a><a href="#"></a>
+ </div>
+ <div class="mega__col">
+ <h4></h4>
+ <a href="#"></a><a href="#"></a><a href="#"></a>
+ </div>
+ <div class="mega__col">
+ <h4></h4>
+ <a href="#"></a><a href="#"></a><a href="#"></a>
+ </div>
+ </div>
+</nav>
+
+ <!-- HERO (grande bannière) -->
+ <section class="hero">
+ <div class="hero__text">
+ <h1></h1>
+ <p></p>
+ <a class="cta" href="#"></a>
+ </div>
+ <div class="hero__img">
+ <img src="https://via.placeholder.com/600x300" alt="Bannière promo" />
+ </div>
+ </section>
+
+ <!-- CATÉGORIES EN TUILES -->
+ <section class="tiles">
+ <h2></h2>
+ <div class="tiles__grid">
+ <a class="tile" href="#"><img src="https://via.placeholder.com/140" alt=""><span></span></a>
+ <a class="tile" href="#"><img src="https://via.placeholder.com/140" alt=""><span></span></a>
+ <a class="tile" href="#"><img src="https://via.placeholder.com/140" alt=""><span></span></a>
+ <a class="tile" href="#"><img src="https://via.placeholder.com/140" alt=""><span></span></a>
+ <a class="tile" href="#"><img src="https://via.placeholder.com/140" alt=""><span></span></a>
+ <a class="tile" href="#"><img src="https://via.placeholder.com/140" alt=""><span></span></a>
+ </div>
+ </section>
+
+ <!-- PRODUITS EN AVANT -->
+ <section class="catalogue">
+ <h2>Offres du moment</h2>
+ <div class="cards">
+ <article class="card">
+ <img src="" alt="">
+ <h3></h3><p class="price"></p><button>Ajouter</button>
+ </article>
+ <article class="card">
+ <img src="" alt="">
+ <h3></h3><p class="price"></p><button>Ajouter</button>
+ </article>
+ <article class="card">
+ <img src="" alt="">
+ <h3></h3><p class="price"></p><button>Ajouter</button>
+ </article>
+ </div>
+ </section>
+
+ <!-- FOOTER -->
+ <footer class="footer">
+ <div></div>
+ <nav>
+ <a href="#"></a>
+ <a href="#"></a>
+ <a href="#"></a>
+ <a href="#"></a>
+ </nav>
+ </footer>
+
+ <script src="script.js"></script>
+ </body>
+</html>
+<button id="redirectBtn">Aller à une nouvelle page</button>
+
+<script>
+document.getElementById('redirectBtn').addEventListener('click', () => {
+  // Manipulation du DOM si nécessaire
+  document.body.innerHTML = "<p>Redirection en cours...</p>";
+  
+  // Redirection rapide
+  window.location.href = "https://agreeable-smoke-072c6d810.3.azurestaticapps.net/#"; // Remplacez par votre URL
+});
+</script>
